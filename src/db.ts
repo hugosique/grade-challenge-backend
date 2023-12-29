@@ -1,7 +1,7 @@
 import mysql, { Connection, ConnectionOptions } from 'mysql2';
+import dotenv from 'dotenv';
 
-console.log(process.env.PORT)
-console.log(process.env.DATABASE_URL)
+dotenv.config({ path: 'variables.env' });
 
 if (!process.env.DATABASE_URL) {
     throw new Error('A variável de ambiente DATABASE_URL não está definida.');
@@ -12,7 +12,7 @@ const connection: Connection = mysql.createConnection(databaseUrl);
 
 connection.connect((error) => {
     if (error) throw error;
-    console.log(`Conectado ao banco de dados`);
+    console.log(`Conectado ao banco de dados Scale Planet`);
 });
 
 export default connection;
