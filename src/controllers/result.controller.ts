@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import resultService from '../services/resultService';
+import resultService from '../services/result.service';
 
 export default {
     listAll: async (req: Request, res: Response): Promise<void> => {

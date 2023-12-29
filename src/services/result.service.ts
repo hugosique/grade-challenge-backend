@@ -1,5 +1,5 @@
 import { QueryError, RowDataPacket } from 'mysql2';
-import { IResult } from '../models/resultModel';
+import { IResult } from '../models/result.model';
 import db from '../db';
 
 export default {
