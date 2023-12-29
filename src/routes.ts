@@ -4,11 +4,9 @@ import resultController from './controllers/resultController';
 
 const router: Router = express.Router();
 
-// Controllers
-// Certifique-se de que resultController está em TypeScript
-// Se o controller ainda estiver em JavaScript, você pode ajustar o import conforme necessário
-
 // Resultado
 router.get('/result', resultController.listAll);
+router.post('/result', resultController.create);
+router.delete('/result/:id', resultController.delete);
 
 export default router;
