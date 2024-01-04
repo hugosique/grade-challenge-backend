@@ -21,12 +21,6 @@ export default {
         };
 
         try {
-            const isDuplicate = await resultService.isDuplicate(body.bimestre, body.disciplina);
-            if (isDuplicate) {
-                res.status(400).json({ error: 'Já existe uma nota para a disciplina neste bimestre.' });
-                return;
-            };
-
             const createResult = await resultService.create(body);
             res.json({result: createResult});
         } catch {
