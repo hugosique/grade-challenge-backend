@@ -1,10 +1,8 @@
-require('dotenv').config({path:'variables.env'})
-const express = require('express');
-const cors = require('cors');
+import express, { Application, Request, Response } from 'express';
+import cors from 'cors';
+import routes from './routes';
 
-const routes = require('./routes');
-
-const app = express();
+const app: Application = express();
 
 app.use(cors());
 app.use(express.json());
