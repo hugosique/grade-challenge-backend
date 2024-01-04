@@ -3,9 +3,9 @@ Desafio de notas (backend)
 
 # Info
 
-As variaveis necessárias para a conexão estão no arquivo 'variables.env'. Para acessar basta alterar para a branch desafio-hugo-siqueira e executar o comando npm run start.
+Para iniciar o servidor basta alterar para a branch desafio-hugo-siqueira e executar o comando npm run start.
 
-`Lembre-se de verificar se as dependências estão baixadas`;
+`Lembre-se de verificar se as dependências estão baixadas e incluir o arquivo variables.env na raiz`;
 
 # Servidor
 
